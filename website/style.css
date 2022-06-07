@@ -1,0 +1,259 @@
+body{
+    background: #18afd9;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 100%;
+    }
+
+#app{
+    display: grid;
+    grid-template-rows:  10% 14% 19% 29%;
+    height:100vh;
+    background: #18afd9;
+    color: #1d1d1a;
+    /* justify-content: center;*/
+    grid-gap: 134px;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    position: relative;
+    left: 22px;
+    }
+
+.headline{
+    background-color: #d26cd2;
+    top: 0;
+    font-size: 99px;
+    color: #5e35b1
+    }
+
+h1{
+    font-size: 25px;
+    }
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 78%;
+    height: 98%;
+    left: 122px
+    }
+
+.entry{
+    background: #45598766;
+    font-size: 48px;
+    color: #d6a9d6;
+    text-align: center;
+    }
+
+#entryHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    }
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display: block;
+    font-size: 52px;
+    }
+
+input{
+    display: block;
+    height: 105px;
+    width: 551px;
+    background: #abd1dc;
+    color: #8e24aa;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    }
+
+button{
+    width: 160px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    border-radius: 25px;
+    margin: 24px auto;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+    }
+
+/* TODO: hover for button */
+button:hover {
+    background-color: rgb(76, 174, 174);
+    }
+
+textarea{
+    background: #bdd9e0;
+    color: #8e24aa;
+    font-size: 29px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 16px;
+    position: relative;
+    top: 7px;
+    }
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    }
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #be2f2f;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+::-ms-textarea-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+/*---------------------@ different media screen width-------------------*/
+/* ADJUST: responsive on different screen width */
+
+/* style on small screen min-width 350px */
+@media only screen and (min-width: 350px) {
+    #app {
+    width: 73%;
+    align-items: center;
+    }
+
+.holder{
+    width: 99%;
+    height: 42%;
+    left: 156px;
+    }
+
+textarea {
+    padding-bottom: 51px;
+    }
+
+.feel {
+    margin-bottom: 64px;
+    }
+}
+
+/* -------minimum screen width = 500px------------------------ */
+@media only screen and (min-width: 500px){
+#app {
+    grid-template-rows: 121px 92px 183px 247px;
+    grid-gap: 11px;
+    }
+
+h1 {
+    bottom: 48px;
+    }
+
+label {
+    font-size: 29px;
+    }
+
+input {
+    font-size: 29px;
+    height: 50px;
+    }
+
+/* style placeholder on different browsers */
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #be2f2f;
+    font-size: 29px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-size: 29px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
+    font-size: 29px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+.entry {
+    font-size: 30px;
+    height: 249px;
+    }
+
+textarea {
+    height: 97px;
+    font-size: 29px;
+    }
+
+#generate{
+    margin: 7px auto 14px;
+    top: 9px;
+    height: 51px;
+    }
+}
+
+/*----------- on screen width with minimium = 600px------------- */
+@media only screen and (min-width: 600px){
+#app {
+    position: relative;
+    left: 0;
+    }
+
+h1{
+    font-size: 51px;
+    position: relative;
+    top: -21px;
+    }
+}
+
+
+/*------------ minimu screen width =1020px------------------ */
+@media only screen and (min-width: 1020px){
+#app {
+    grid-template-rows: 130px 92px 183px 250px;
+    grid-gap: 21px;
+    width: 85%;
+    position: relative;
+    left: 2px;
+    height: 108vh;
+    }
+
+.holder{
+    position: relative;
+    width: 83%;
+    height: 96%;
+    right: 410px
+    }
+
+.feel {
+    margin-bottom: 22px;
+    }
+
+.entry {
+    position: relative;
+    bottom: 20px;
+    }
+}
